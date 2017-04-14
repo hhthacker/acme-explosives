@@ -6,6 +6,9 @@ $(document).ready(function(){
         var domString = "";
         for(var i=0; i<explosives.length; i++){
             domString += `<h1>${explosives[i].name}</h1>`;
+            domString += ``;
+            domString += ``;
+
         }
         $("#promises").append(domString);
     }
@@ -47,10 +50,18 @@ var typesJSON = function(){
 		.then(function(resultz){
 			console.log("resultz", resultz);
 			resultz.forEach(function(ajaxCalls){
-				ajaxCalls.forEach(function(dino){
-					explosives.push(dino);
+				ajaxCalls.forEach(function(boom){
+					explosives.push(boom);
 				});
 			});
 			writeDOM();
 		});
 });
+
+
+
+
+
+
+
+
