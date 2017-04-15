@@ -1,10 +1,193 @@
 {
-    "products": [{
-        "fairy_sparklers": {
+    "products": [
+        {
             "id": 0,
             "type": 0,
+            "category": 0,
+            "name": "Pop Rocks",
+            "description": "Similar to the candy they look like, but don't eat them!"
+        },
+        {
+            "id": 1,
+            "type": 0,
+            "category": 0,
+            "name": "Black Cats",
+            "description": "Chainable little explosives that also explode underwater."
+        },
+        {
+            "id": 2,
+            "type": 0,
+            "category": 0,
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 3,
+            "type": 1,
+            "category": 0,
+            "name": "Chicken Whistlers",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 4,
+            "type": 1,
+            "category": 0,
+            "name": "Chimichanga",
+            "description": "Similar to the candy they look like, but don't eat them!"
+        },
+        {
+            "id": 5,
+            "type": 1,
+            "category": 0,
+            "name": "Jimmy's Sprinks",
+            "description": "For use in a parade or party."
+        },
+        {
+            "id": 6,
+            "type": 2,
+            "category": 0,
+            "name": "Cupcake Caps",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 7,
+            "type": 2,
+            "category": 0,
+            "name": "Flower Flailers",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 8,
+            "type": 2,
+            "category": 0,
+            "name": "Orange Bombs",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 9,
+            "type": 1,
+            "category": 1,
+            "name": "Cookie Crumbler",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 10,
+            "type": 1,
+            "category": 1,
+            "name": "Nachoes",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 11,
+            "type": 1,
+            "category": 1,
+            "name": "Special Sauce",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+		{
+            "id": 12,
+            "type": 0,
+            "category": 1,
+            "name": "Electron Smoosher",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 13,
+            "type": 0,
+            "category": 1,
+            "name": "Atom's Apple",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 14,
+            "type": 0,
+            "category": 1,
+            "name": "Neon Graveyard",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 15,
+            "type": 2,
+            "category": 1,
+            "name": "Monkey Muffins",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 16,
+            "type": 2,
+            "category": 1,
+            "name": "Blue Suede Shoes",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 17,
+            "type": 2,
+            "category": 1,
+            "name": "Gnome Nuke",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 18,
+            "type": 2,
+            "category": 2,
+            "name": "Marker Missle",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 19,
+            "type": 2,
+            "category": 2,
+            "name": "Paper Plane",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 20,
+            "type": 2,
+            "category": 2,
+            "name": "Starbuck-n-duck",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 21,
+            "type": 1,
+            "category": 2,
+            "name": "Merry Crisp-moss",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 22,
+            "type": 1,
+            "category": 2,
+            "name": "Expo Remarker",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 23,
+            "type": 1,
+            "category": 2,
+            "name": "iPhone cRackler",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 24,
+            "type": 0,
+            "category": 2,
+            "name": "Pretty Petty Princess",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 25,
+            "type": 0,
+            "category": 2,
+            "name": "Muddy Fossilizer",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 26,
+            "type": 0,
+            "category": 2,
+            "name": "Pie in the Eye",
+            "description": "Multi-colored sparklers that are safe for any age."
         }
-    }]
+    ]
 }

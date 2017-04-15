@@ -1,9 +1,16 @@
 {
-    "categories": [{
+    "categories": [
+        {
             "id": 0,
-            "name": "Fireworks"
-        }, {
+            "name": "Recreational"
+        },
+        {
             "id": 1,
-            "name": "Demolition"
-        }]
+            "name": "Commercial"
+        },
+        {
+            "id": 2,
+            "name": "Military"
+        }
+    ]
 }

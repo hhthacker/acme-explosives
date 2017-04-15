@@ -1,16 +1,16 @@
 $(document).ready(function(){
 
-    var explosives = [];
+    var categories = [];
+    var types = [];
+    var products = [];
 
-    function writeDOM(){
-        var domString = "";
+    function writeCategories(){
+        var categoriesString = "";
+        console.log(explosives, "boom");
         for(var i=0; i<explosives.length; i++){
-            domString += `<h1>${explosives[i].name}</h1>`;
-            domString += ``;
-            domString += ``;
-
+            categoriesString += `<li><a href="#">${explosives[i].name}</a></li>`;
         }
-        $("#promises").append(domString);
+        $("#categories").append(categoriesString);
     }
 
 
@@ -46,22 +46,42 @@ var typesJSON = function(){
 };
 
 //crafting promise package for DOM
-	Promise.all([categoriesJSON(), productsJSON(), typesJSON()])
-		.then(function(resultz){
-			console.log("resultz", resultz);
-			resultz.forEach(function(ajaxCalls){
-				ajaxCalls.forEach(function(boom){
-					explosives.push(boom);
-				});
-			});
-			writeDOM();
-		});
+// 	Promise.all([categoriesJSON(), productsJSON(), typesJSON()])
+// 		.then(function(resultz){
+// 			console.log("resultz", resultz);
+// 			resultz.forEach(function(ajaxCalls){
+// 				ajaxCalls.forEach(function(boom){
+// 					explosives.push(boom);
+// 				});
+// 			});
+// 			writeCategories();
+// 		});
+// });
+
+
+
+categoriesJSON().then(function(results){
+	results.forEach(function(myCategories){
+		categories.push(myCategories);
+	});
 });
 
 
+productsJSON().then(function(results){
+	results.forEach(function(myProducts){
+		products.push(myProducts);
+	});
+});
+
+typesJSON().then(function(results){
+	results.forEach(function(myTypes){
+		types.push(myTypes);
+	});
+});
+
+console.log("movement types", types);
+console.log("movement categories", categories);
+console.log("movement products", products);
 
 
-
-
-
-
+});

@@ -8,9 +8,29 @@
 </head>
 
 <body>
+<div class="jumbotron">
 	<h1>hi cool world</h1>
+	</div>
 
-	<button class="btn btn-danger" type="button" id="button">Boom Boom</button>
+
+	<div class="btn-group">
+  <button class="btn btn-warning btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Categories <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" id="categories">
+  <!-- categories go here -->
+  </ul>
+</div>
+
+<div class="btn-group">
+  <button class="btn btn-danger btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Types <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" id="types">
+<!-- types go here -->
+  </ul>
+</div>
+
 	<div id="promises"></div>
 
 	<script src="./lib/bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
