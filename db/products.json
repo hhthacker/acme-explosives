@@ -4,6 +4,7 @@
             "id": 0,
             "type": 0,
             "category": 0,
+            "image": "https://assets3.thrillist.com/v1/image/1836863/size/tmg-slideshow_l.jpg",
             "name": "Pop Rocks",
             "description": "Similar to the candy they look like, but don't eat them!"
         },
@@ -11,6 +12,7 @@
             "id": 1,
             "type": 0,
             "category": 0,
+            "image": "http://www.cattell.net/devon/BlackCats/IMG_2844%20say%20ah%20small.jpg",
             "name": "Black Cats",
             "description": "Chainable little explosives that also explode underwater."
         },
@@ -18,6 +20,7 @@
             "id": 2,
             "type": 0,
             "category": 0,
+            "image": "https://s-media-cache-ak0.pinimg.com/736x/67/69/4b/67694bd668bf17aeee998321fa8f476f.jpg",
             "name": "Fairy Sparklers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -25,6 +28,7 @@
             "id": 3,
             "type": 1,
             "category": 0,
+            "image": "https://www.mypetchicken.com/images/product_images/Popup/Studio_WhBrdSlkHn_8083_L.jpg",
             "name": "Chicken Whistlers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -32,6 +36,7 @@
             "id": 4,
             "type": 1,
             "category": 0,
+            "image": "http://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/exps17520_LT10285D7.jpg",
             "name": "Chimichanga",
             "description": "Similar to the candy they look like, but don't eat them!"
         },
@@ -39,6 +44,7 @@
             "id": 5,
             "type": 1,
             "category": 0,
+            "image": "http://i2.irishmirror.ie/incoming/article7912877.ece/ALTERNATES/s615/jimmy-fallon-main.jpg",
             "name": "Jimmy's Sprinks",
             "description": "For use in a parade or party."
         },
@@ -46,6 +52,7 @@
             "id": 6,
             "type": 2,
             "category": 0,
+            "image": "https://s-media-cache-ak0.pinimg.com/736x/2b/5d/21/2b5d210f791ee4510f7f45b5c31c5252.jpg",
             "name": "Cupcake Caps",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -53,6 +60,7 @@
             "id": 7,
             "type": 2,
             "category": 0,
+            "image": "http://photos.costume-works.com/full/funny_flowers4.jpg",
             "name": "Flower Flailers",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -60,6 +68,7 @@
             "id": 8,
             "type": 2,
             "category": 0,
+            "image": "https://cdn1.healthambition.com/wp-content/uploads/2017/02/28094330/img5-3.jpg",
             "name": "Orange Bombs",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -67,6 +76,7 @@
             "id": 9,
             "type": 1,
             "category": 1,
+            "image": "http://www.loulou.to/wp-content/uploads/2012/04/cat-cookies.jpg",
             "name": "Cookie Crumbler",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -74,6 +84,7 @@
             "id": 10,
             "type": 1,
             "category": 1,
+            "image": "https://s-media-cache-ak0.pinimg.com/564x/bd/fb/1e/bdfb1e6fd639334b56d0e56a9354eb9a.jpg",
             "name": "Nachoes",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -81,6 +92,7 @@
             "id": 11,
             "type": 1,
             "category": 1,
+            "image": "http://vignette1.wikia.nocookie.net/spongefan/images/6/60/Special_Sauce.png/revision/latest?cb=20150527174046",
             "name": "Special Sauce",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -88,6 +100,7 @@
             "id": 12,
             "type": 0,
             "category": 1,
+            "image": "http://www.quickmeme.com/img/f6/f6c25fd36e14e8d73d501c15bb950110d9f501499f6ad80d45eabd61f58e9205.jpg",
             "name": "Electron Smoosher",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -95,6 +108,7 @@
             "id": 13,
             "type": 0,
             "category": 1,
+            "image": "http://www.chemistryjokes.com/images/what-did-the-angry-electron-say-when-it-was-repelled.jpg",
             "name": "Atom's Apple",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -102,6 +116,7 @@
             "id": 14,
             "type": 0,
             "category": 1,
+            "image": "http://www.marksimonson.com/assets/content/notebook/sassyB.jpg",
             "name": "Neon Graveyard",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -109,6 +124,7 @@
             "id": 15,
             "type": 2,
             "category": 1,
+            "image": "http://stylishcuisine.com/wp-content/uploads/monkey-bread-v1-1.jpg",
             "name": "Monkey Muffins",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -116,6 +132,7 @@
             "id": 16,
             "type": 2,
             "category": 1,
+            "image": "http://i.ebayimg.com/00/s/MTYwMFgxMzQ1/z/DgEAAOSwq7JULTCV/$_35.JPG?set_id=2",
             "name": "Blue Suede Shoes",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -123,6 +140,7 @@
             "id": 17,
             "type": 2,
             "category": 1,
+            "image": "https://s-media-cache-ak0.pinimg.com/236x/1c/cb/f0/1ccbf097c76f0d5c80a4bac406f1e9dc.jpg",
             "name": "Gnome Nuke",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -130,6 +148,7 @@
             "id": 18,
             "type": 2,
             "category": 2,
+            "image": "https://pbs.twimg.com/media/C73SCP-XUAA11Z5.jpg",
             "name": "Marker Missle",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -137,6 +156,7 @@
             "id": 19,
             "type": 2,
             "category": 2,
+            "image": "https://i0.wp.com/wildmushroomland.com/wp-content/uploads/2015/06/gudetama-20150612.jpg?resize=581%2C327",
             "name": "Paper Plane",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -144,6 +164,7 @@
             "id": 20,
             "type": 2,
             "category": 2,
+            "image": "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/12/11/enhanced/webdr14/enhanced-8896-1447347334-2.png",
             "name": "Starbuck-n-duck",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -151,6 +172,7 @@
             "id": 21,
             "type": 1,
             "category": 2,
+            "image": "http://2ff8n03drmib1b12373aauek-wpengine.netdna-ssl.com/assets/images/Art/Moss/moss%20car.jpg",
             "name": "Merry Crisp-moss",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -158,6 +180,7 @@
             "id": 22,
             "type": 1,
             "category": 2,
+            "image": "http://nyc.barstoolsports.com/files/2014/05/Screen-Shot-2014-05-19-at-12.59.00-PM.png",
             "name": "Expo Remarker",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -165,6 +188,7 @@
             "id": 23,
             "type": 1,
             "category": 2,
+            "image": "http://canitbesaturdaynow.com/images/fpics/451/4_10_09_%20(141)__large.jpg",
             "name": "iPhone cRackler",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -172,6 +196,7 @@
             "id": 24,
             "type": 0,
             "category": 2,
+            "image": "http://welovecatsandkittens.com/wp-content/uploads/2016/10/aurora-1.jpg",
             "name": "Pretty Petty Princess",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -179,6 +204,7 @@
             "id": 25,
             "type": 0,
             "category": 2,
+            "image": "https://ultimatehomelife.com/wp-content/uploads/2016/12/Can-Dogs-Eat-Chicken-Bones.jpg",
             "name": "Muddy Fossilizer",
             "description": "Multi-colored sparklers that are safe for any age."
         },
@@ -186,6 +212,7 @@
             "id": 26,
             "type": 0,
             "category": 2,
+            "image": "https://mathusiasts.files.wordpress.com/2011/04/pi-berational.jpg",
             "name": "Pie in the Eye",
             "description": "Multi-colored sparklers that are safe for any age."
         }

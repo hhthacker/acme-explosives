@@ -4,13 +4,32 @@ $(document).ready(function(){
     var types = [];
     var products = [];
 
-    function writeCategories(){
-        var categoriesString = "";
-        console.log(explosives, "boom");
-        for(var i=0; i<explosives.length; i++){
-            categoriesString += `<li><a href="#">${explosives[i].name}</a></li>`;
+    function writeCategories(categories){
+        var catString = "";
+        for(var i=0; i<categories.length; i++){
+            catString += `<li><a href="#categories-">${categories[i].name}</a></li>`;
         }
-        $("#categories").append(categoriesString);
+        $("#categories").append(catString);
+    }
+
+    function writeTypes(types){
+        var typeString = "";
+        for(var i=0; i<types.length; i++){
+            typeString += `<li><a href="#types-">${types[i].name}</a></li>`;
+        }
+        $("#types").append(typeString);
+    }
+
+    function writeDOM(products){
+    	var productString = "";
+    	for(var i=0; i<products.length; i++) {
+    		productString += `<div class="container col-md-4 type-${products[i].type} category-${products[i].category}">`;
+    		productString += `<div class="thumbnail"><img src="${products[i].image}" alt="${products[i].name}">`;
+      		productString += `<div class="caption"><h3>${products[i].name}</h3><p>${products[i].description}</p>`;
+       //buttons: <p><a href="#" class="btn btn-danger" role="button">Boom</a> <a href="#" class="btn btn-warning" role="button">Bang</a></p>
+      		productString += `</div></div></div>`;
+    	}
+    	$("#products").append(productString);
     }
 
 
@@ -46,42 +65,25 @@ var typesJSON = function(){
 };
 
 //crafting promise package for DOM
-// 	Promise.all([categoriesJSON(), productsJSON(), typesJSON()])
-// 		.then(function(resultz){
-// 			console.log("resultz", resultz);
-// 			resultz.forEach(function(ajaxCalls){
-// 				ajaxCalls.forEach(function(boom){
-// 					explosives.push(boom);
-// 				});
-// 			});
-// 			writeCategories();
-// 		});
-// });
-
-
-
 categoriesJSON().then(function(results){
 	results.forEach(function(myCategories){
 		categories.push(myCategories);
 	});
+	writeCategories(categories);
 });
-
 
 productsJSON().then(function(results){
 	results.forEach(function(myProducts){
 		products.push(myProducts);
 	});
+	writeDOM(products);
 });
 
 typesJSON().then(function(results){
 	results.forEach(function(myTypes){
 		types.push(myTypes);
 	});
+	writeTypes(types);
 });
-
-console.log("movement types", types);
-console.log("movement categories", categories);
-console.log("movement products", products);
-
 
 });
