@@ -4,22 +4,39 @@ $(document).ready(function(){
     var types = [];
     var products = [];
 
+
+//////////////////////////////////// drop down maker and filter
     function writeCategories(categories){
         var catString = "";
         for(var i=0; i<categories.length; i++){
-            catString += `<li><a href="#categories-">${categories[i].name}</a></li>`;
+            catString += `<li><a href="#categories-${categories[i].id}" onclick="${filterCategories()}">${categories[i].name}</a></li>`;
         }
         $("#categories").append(catString);
     }
 
+    function filterCategories() {
+		if ( $("a").attr("href") === "categories-0" ) {
+			console.log("cat0");
+		} else if ( $("a").attr("href") === "categories-1" ) {
+			console.log("cat1");
+		} else if ( $("a").attr("href") === "categories-2" ) {
+			console.log("cat2");
+		}
+	}
+
     function writeTypes(types){
         var typeString = "";
         for(var i=0; i<types.length; i++){
-            typeString += `<li><a href="#types-">${types[i].name}</a></li>`;
+            typeString += `<li><a href="#types-${types[i].id}" onclick="${filterTypes()}">${types[i].name}</a></li>`;
         }
         $("#types").append(typeString);
     }
 
+    function filterTypes() {
+		console.log("hey types");
+	}
+
+//////////////////////////////////////// card creator
     function writeDOM(products){
     	var productString = "";
     	for(var i=0; i<products.length; i++) {
@@ -32,8 +49,7 @@ $(document).ready(function(){
     	$("#products").append(productString);
     }
 
-
-///xhr request and data parsing
+/////////////////////////////////xhr request and data parsing
 var categoriesJSON = function(){
 	return new Promise(function(resolve, reject){
 		$.ajax("./db/categories.json").done(function(data1){
@@ -64,7 +80,7 @@ var typesJSON = function(){
 	});
 };
 
-//crafting promise package for DOM
+///////////////////////////////////////////crafting promise package for DOM
 categoriesJSON().then(function(results){
 	results.forEach(function(myCategories){
 		categories.push(myCategories);
