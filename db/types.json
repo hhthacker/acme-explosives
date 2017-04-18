@@ -3,56 +3,56 @@
         {
             "id": 0,
             "category_id": 0,
-            "name": "Personal0",
-            "description": "Small grade products"
+            "name": "Personal",
+            "description": "No need to share!"
         },
         {
             "id": 1,
             "category_id": 0,
-            "name": "Handheld0",
-            "description": "Products held for use"
+            "name": "Handheld",
+            "description": "Even fits in baby's hands."
         },
         {
             "id": 2,
             "category_id": 0,
-            "name": "Heavy Duty0",
-            "description": "Very dangerous. Take precaution!"
+            "name": "Party Favor",
+            "description": "Makes a lot of sound."
         },
         {
             "id": 3,
             "category_id": 1,
-            "name": "Personal1",
-            "description": "Small grade products"
+            "name": "Holiday",
+            "description": "Flashy and trashy!"
         },
         {
             "id": 4,
             "category_id": 1,
-            "name": "Handheld1",
-            "description": "Products held for use"
+            "name": "Roadside",
+            "description": "It's like a flare."
         },
         {
             "id": 5,
             "category_id": 1,
-            "name": "Heavy Duty1",
-            "description": "Very dangerous. Take precaution!"
+            "name": "Hard Hat",
+            "description": "Mo' fun mo' fear."
         },
         {
             "id": 6,
             "category_id": 2,
-            "name": "Personal2",
-            "description": "Small grade products"
+            "name": "Big Boom Boom",
+            "description": "So scary!"
         },
         {
             "id": 7,
             "category_id": 2,
-            "name": "Handheld2",
-            "description": "Products held for use"
+            "name": "Eeep",
+            "description": "Ahhhh!"
         },
         {
             "id": 8,
             "category_id": 2,
-            "name": "Heavy Duty2",
-            "description": "Very dangerous. Take precaution!"
+            "name": "Oops",
+            "description": "Bye Bye!"
         }
     ]
 }

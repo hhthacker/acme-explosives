@@ -7,8 +7,6 @@ $(document).ready(function(){
 
 //////////////////////////////////// populate categories and filter types
    function writeCategories(categories){
-   		$("#typesButton").prop('disabled', true);
-
         var catString = "";
         for(var i=0; i<categories.length; i++){
             catString += `<li id="categories-${categories[i].id}"><a class="catListClass">${categories[i].name}</a></li>`;
@@ -30,11 +28,11 @@ $("body").on("click", ".catListClass", function(){
 
 //////////////////////////////// populate types dropdown, filter products to write DOM
     function writeTypes(types){
-    	$("#typesButton").prop('disabled', false);
+    	$("#typesButton").removeClass("disabled");
 
         var typeString = "";
         for(var i=0; i<types.length; i++){
-            typeString += `<li id="types-${types[i].id}"><a class="typeListClass">${types[i].name}</a></li>`;
+            typeString += `<li id="types-${types[i].id}"><a class="typeListClass">${types[i].name} - ${types[i].description}</a></li>`;
         }
         $("#typesList").append(typeString);
     }
