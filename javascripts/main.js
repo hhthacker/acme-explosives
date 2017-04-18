@@ -7,39 +7,44 @@ $(document).ready(function(){
 
 
 //////////////////////////////////// drop down maker and filter
-        function filterCategories() {
-        	console.log("wooo");
-	// 	$("#categories-0").click(console.log("cat0hey")); {
-	// 	// 	console.log("cat0");
-	// 	// } else if ($("#categories-1")) {
-	// 	// 	console.log("cat1");
-	// 	// } else if ($("#categories-2")) {
-	// 	// 	console.log("cat2");
-	// 	}
-	 }
-
 
    function writeCategories(categories){
         var catString = "";
         for(var i=0; i<categories.length; i++){
-            catString += `<li id="#categories-${categories[i].id}" role="button" data-toggle="modal">${categories[i].name}</li>`;
+            catString += `<li id="categories-${categories[i].id}"><a class="catListClass">${categories[i].name}</a></li>`;
         }
-        $("#categories").append(catString);
-        $("#categories-0").click(function(){ console.log("ahh"); filterCategories(); return false; });
+        $("#categoriesList").append(catString);
     }
 
+$("body").on("click", ".catListClass", function(){ 
+var categoryType = $(this).parent().attr("id");
+var categoryNumber = categoryType.split("categories-");
+
+for (var x = 0; x > types.length; x++) {
+	if (types.category_id === categoryNumber[1]) {
+		type.name
+	}
+}
+console.log("hey hey", categoryType, categoryNumber[1]);
+
+
+
+//for loop on the types, to match ids of aa variable.
+//if matches temp array, run write-types to populate second dropdown
+});
+
+
+
+//same with products/types then calls writeProducts
 
     function writeTypes(types){
         var typeString = "";
         for(var i=0; i<types.length; i++){
-            typeString += `<li><a href="#types-${types[i].id}" onclick="${filterTypes()}">${types[i].name}</a></li>`;
+            typeString += `<li><a>${types[i].name}</a></li>`;
         }
-        $("#types").append(typeString);
+        $("#typesList").append(typeString);
     }
 
-    function filterTypes() {
-		console.log("hey types");
-	}
 
 //////////////////////////////////////// card creator
     function writeDOM(products){
