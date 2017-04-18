@@ -17,34 +17,42 @@ $(document).ready(function(){
     }
 
 $("body").on("click", ".catListClass", function(){ 
-var categoryType = $(this).parent().attr("id");
-var categoryNumber = categoryType.split("categories-");
-
-for (var x = 0; x > types.length; x++) {
-	if (types.category_id === categoryNumber[1]) {
-		type.name
+	var categoryType = $(this).parent().attr("id");
+	var categoryNumber = categoryType.split("categories-");
+	var filteredTypes = [];
+		for (var x = 0; x < types.length; x++) {
+			if (types[x].category_id == categoryNumber[1]) {
+				filteredTypes.push(types[x]);
 	}
 }
-console.log("hey hey", categoryType, categoryNumber[1]);
-
-
-
-//for loop on the types, to match ids of aa variable.
+console.log("hey hey", filteredTypes);
+writeTypes(filteredTypes);
 //if matches temp array, run write-types to populate second dropdown
 });
-
-
 
 //same with products/types then calls writeProducts
 
     function writeTypes(types){
+    	$("#typesButton").disable;
         var typeString = "";
         for(var i=0; i<types.length; i++){
-            typeString += `<li><a>${types[i].name}</a></li>`;
+            typeString += `<li id="types-${types[i].id}"><a class="typeListClass">${types[i].name}</a></li>`;
         }
         $("#typesList").append(typeString);
     }
 
+$("body").on("click", ".typeListClass", function(){ 
+	var typeID = $(this).parent().attr("id");
+	var typeNumber = typeID.split("types-");
+	var filteredProducts = [];
+		for (var a = 0; a < products.length; a++) {
+			if (products[a].type == typeNumber[1]) {
+				filteredProducts.push(products[a]);
+	}
+}
+writeDOM(filteredProducts);
+console.log(filteredProducts);
+});
 
 //////////////////////////////////////// card creator
     function writeDOM(products){
@@ -102,14 +110,13 @@ productsJSON().then(function(results){
 	results.forEach(function(myProducts){
 		products.push(myProducts);
 	});
-	writeDOM(products);
+	// writeDOM(products);
 });
 
 typesJSON().then(function(results){
 	results.forEach(function(myTypes){
 		types.push(myTypes);
 	});
-	writeTypes(types);
 });
 
 });
