@@ -5,41 +5,49 @@ $(document).ready(function(){
     var types = [];
     var products = [];
 
-
-//////////////////////////////////// drop down maker and filter
-        function filterCategories() {
-        	console.log("wooo");
-	// 	$("#categories-0").click(console.log("cat0hey")); {
-	// 	// 	console.log("cat0");
-	// 	// } else if ($("#categories-1")) {
-	// 	// 	console.log("cat1");
-	// 	// } else if ($("#categories-2")) {
-	// 	// 	console.log("cat2");
-	// 	}
-	 }
-
-
+//////////////////////////////////// populate categories and filter types
    function writeCategories(categories){
         var catString = "";
         for(var i=0; i<categories.length; i++){
-            catString += `<li id="#categories-${categories[i].id}" role="button" data-toggle="modal">${categories[i].name}</li>`;
+            catString += `<li id="categories-${categories[i].id}"><a class="catListClass">${categories[i].name}</a></li>`;
         }
-        $("#categories").append(catString);
-        $("#categories-0").click(function(){ console.log("ahh"); filterCategories(); return false; });
+        $("#categoriesList").append(catString);
     }
 
+$("body").on("click", ".catListClass", function(){ 
+	var categoryType = $(this).parent().attr("id");
+	var categoryNumber = categoryType.split("categories-");
+	var filteredTypes = [];
+		for (var x = 0; x < types.length; x++) {
+			if (types[x].category_id == categoryNumber[1]) {
+				filteredTypes.push(types[x]);
+		}
+	}
+	writeTypes(filteredTypes);
+});
 
+//////////////////////////////// populate types dropdown, filter products to write DOM
     function writeTypes(types){
+    	$("#typesButton").removeClass("disabled");
+
         var typeString = "";
         for(var i=0; i<types.length; i++){
-            typeString += `<li><a href="#types-${types[i].id}" onclick="${filterTypes()}">${types[i].name}</a></li>`;
+            typeString += `<li id="types-${types[i].id}"><a class="typeListClass">${types[i].name} - ${types[i].description}</a></li>`;
         }
-        $("#types").append(typeString);
+        $("#typesList").append(typeString);
     }
 
-    function filterTypes() {
-		console.log("hey types");
+$("body").on("click", ".typeListClass", function(){ 
+	var typeID = $(this).parent().attr("id");
+	var typeNumber = typeID.split("types-");
+	var filteredProducts = [];
+		for (var a = 0; a < products.length; a++) {
+			if (products[a].type == typeNumber[1]) {
+				filteredProducts.push(products[a]);
+		}
 	}
+	writeDOM(filteredProducts);
+});
 
 //////////////////////////////////////// card creator
     function writeDOM(products){
@@ -97,14 +105,12 @@ productsJSON().then(function(results){
 	results.forEach(function(myProducts){
 		products.push(myProducts);
 	});
-	writeDOM(products);
 });
 
 typesJSON().then(function(results){
 	results.forEach(function(myTypes){
 		types.push(myTypes);
 	});
-	writeTypes(types);
 });
 
 });

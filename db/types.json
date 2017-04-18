@@ -2,18 +2,57 @@
     "types": [
         {
             "id": 0,
+            "category_id": 0,
             "name": "Personal",
-            "description": "Small grade products"
+            "description": "No need to share!"
         },
         {
             "id": 1,
+            "category_id": 0,
             "name": "Handheld",
-            "description": "Products held for use"
+            "description": "Even fits in baby's hands."
         },
         {
             "id": 2,
-            "name": "Heavy Duty",
-            "description": "Very dangerous. Take precaution!"
+            "category_id": 0,
+            "name": "Party Favor",
+            "description": "Makes a lot of sound."
+        },
+        {
+            "id": 3,
+            "category_id": 1,
+            "name": "Holiday",
+            "description": "Flashy and trashy!"
+        },
+        {
+            "id": 4,
+            "category_id": 1,
+            "name": "Roadside",
+            "description": "It's like a flare."
+        },
+        {
+            "id": 5,
+            "category_id": 1,
+            "name": "Hard Hat",
+            "description": "Mo' fun mo' fear."
+        },
+        {
+            "id": 6,
+            "category_id": 2,
+            "name": "Big Boom Boom",
+            "description": "So scary!"
+        },
+        {
+            "id": 7,
+            "category_id": 2,
+            "name": "Eeep",
+            "description": "Ahhhh!"
+        },
+        {
+            "id": 8,
+            "category_id": 2,
+            "name": "Oops",
+            "description": "Bye Bye!"
         }
     ]
 }
